@@ -37,8 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'finchart'
+    'finchart',
+    'django.contrib.humanize',
 ]
+
+# 数字3桁ごとにカンマを入れる
+NUMBER_GROUPING = 3
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
